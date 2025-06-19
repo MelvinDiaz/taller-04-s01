@@ -1,4 +1,6 @@
 site_name: Cuidado de Perritos - Guía Completa
+site_description: Guía completa para el cuidado de perritos
+site_author: Melvin Diaz
 
 plugins:
   - search
