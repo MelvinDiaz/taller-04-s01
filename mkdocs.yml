@@ -1,0 +1,68 @@
+site_name: Cuidado de Perritos - Guía Completa
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: false
+      locale: es
+      type: date
+
+nav:
+  - Inicio: index.md
+  - Guía de Cuidados:
+    - Introducción: guia/inicio.md
+    - Alimentación: guia/alimentacion.md
+    - Cuidados Diarios: guia/cuidados.md
+    - Tabla de Razas: guia/razas.md
+    - Consejos Generales: guia/consejos.md
+
+theme:
+  name: material
+  language: es
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: "#"
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
